@@ -9,3 +9,6 @@ pref('middlemouse.contentLoadURL', true);
 
 // disable the Pocket extension
 pref('extensions.pocket.enabled', false);
+
+// don't let Firefox store passwords
+pref('signon.rememberSignons', false);
