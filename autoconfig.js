@@ -12,3 +12,6 @@ pref('extensions.pocket.enabled', false);
 
 // don't let Firefox store passwords
 pref('signon.rememberSignons', false);
+
+// always prompt for download directory
+pref('browser.download.useDownloadDir', false);
