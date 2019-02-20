@@ -15,3 +15,6 @@ pref('signon.rememberSignons', false);
 
 // always prompt for download directory
 pref('browser.download.useDownloadDir', false);
+
+// show history before search suggestions in the url bar
+pref("browser.urlbar.matchBuckets", "general:5,suggestion:Infinity");
