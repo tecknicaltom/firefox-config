@@ -18,3 +18,10 @@ pref('browser.download.useDownloadDir', false);
 
 // show history before search suggestions in the url bar
 pref("browser.urlbar.matchBuckets", "general:5,suggestion:Infinity");
+
+// don't show sponsored stories on the new tab page
+pref("browser.newtabpage.activity-stream.showSponsored", false);
+
+// show 2 rows instead of 1 of "top sites" on the new tab page
+pref("browser.newtabpage.activity-stream.topSitesRows", 2);
+
