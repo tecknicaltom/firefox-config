@@ -25,3 +25,20 @@ pref("browser.newtabpage.activity-stream.showSponsored", false);
 // show 2 rows instead of 1 of "top sites" on the new tab page
 pref("browser.newtabpage.activity-stream.topSitesRows", 2);
 
+Components.utils.import("resource://gre/modules/Services.jsm");
+var XULStore = Services.xulStore;
+var browser_uri = "chrome://browser/content/browser.xhtml";
+
+function describe(o)
+{
+  msg = (typeof o) + " ";
+  for (name in o) {
+    msg += "[" + name + "]=" + o[name] + ", ";
+  }
+  return msg;
+}
+//displayError("Services", describe(Services));
+//displayError("sidebar-title", XULStore.getValue(browser_uri, "toolbar-menubar", "autohide"));
+
+// never auto-hide the menubar
+XULStore.setValue(browser_uri, "toolbar-menubar", "autohide", "false");
